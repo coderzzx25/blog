@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
-const WrapperApp = styled.div``
+const AppWrapper = styled.div``
 
-export default WrapperApp
+export default AppWrapper
