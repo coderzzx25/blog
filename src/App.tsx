@@ -1,13 +1,20 @@
 import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
-import WrapperApp from './style'
+import AppWrapper from './style'
+
+import Header from '@/components/Header/Header'
 
 interface IProps {
   children?: ReactNode
 }
 
 const App: FC<IProps> = () => {
-  return <WrapperApp>App</WrapperApp>
+  return (
+    <AppWrapper>
+      <Header />
+      App
+    </AppWrapper>
+  )
 }
 
 export default memo(App)
