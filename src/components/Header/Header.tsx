@@ -9,6 +9,7 @@ interface IProps {
 }
 
 const Header: FC<IProps> = () => {
+  const name = "Hi, I'm Coderzzx"
   const menulist = [
     {
       id: 1,
@@ -21,10 +22,17 @@ const Header: FC<IProps> = () => {
   ]
   return (
     <HeaderWrapper>
-      <div className="content">
-        <h1 className="logo">CODERZZX</h1>
-        <div className="menu">
-          <Menu menuList={menulist} />
+      <div className="header_content">
+        <div className="content">
+          <h1 className="logo">CODERZZX</h1>
+          <div className="menu">
+            <Menu menuList={menulist} />
+          </div>
+        </div>
+      </div>
+      <div className="header_bg">
+        <div className="name">
+          <h1>{name}</h1>
         </div>
       </div>
     </HeaderWrapper>
