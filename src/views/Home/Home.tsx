@@ -7,7 +7,17 @@ interface IProps {
 }
 
 const Home: FC<IProps> = () => {
-  return <HomeWrapper>home</HomeWrapper>
+  const name = "Hi, I'm Coderzzx"
+  return (
+    <HomeWrapper>
+      <div className="header_bg">
+        <div className="name">
+          <h1>{name}</h1>
+        </div>
+      </div>
+      home
+    </HomeWrapper>
+  )
 }
 
 export default memo(Home)
