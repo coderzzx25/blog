@@ -15,7 +15,7 @@ const Home: FC<IProps> = () => {
           <h1>{name}</h1>
         </div>
       </div>
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <div className="content">
           <h2>blog-name</h2>
           <h3>blog-title</h3>
@@ -25,7 +25,7 @@ const Home: FC<IProps> = () => {
             <div className="content-item">item</div>
           </div>
         </div>
-      </div>
+      </div> */}
     </HomeWrapper>
   )
 }
