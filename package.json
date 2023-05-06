@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/styled": "^11.10.8",
+    "@mui/material": "^5.12.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,7 +15,6 @@
     "animate.css": "^4.1.1",
     "classnames": "^2.3.2",
     "craco-less": "^2.1.0-alpha.0",
-    "postcss-loader": "^7.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -56,7 +57,6 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
-    "postcss-px-to-viewport-8-plugin": "^1.2.2",
     "prettier": "^2.8.8"
   }
 }
