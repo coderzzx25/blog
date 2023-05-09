@@ -5,7 +5,7 @@ import classNames from 'classnames'
 
 interface IProps {
   children?: ReactNode
-  menuList?: Array<any>
+  menuList?: Array<{ id: number; name: string; url: string }>
 }
 
 const Menu: FC<IProps> = (props) => {

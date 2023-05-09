@@ -2,30 +2,18 @@ import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
 import HeaderWrapper from './style'
 
-import Menu from '../Menu/Menu'
-
 interface IProps {
   children?: ReactNode
+  menu: ReactNode
 }
 
-const Header: FC<IProps> = () => {
-  const menulist = [
-    {
-      id: 1,
-      name: 'Home'
-    },
-    {
-      id: 2,
-      name: 'About Me'
-    }
-  ]
+const Header: FC<IProps> = (props) => {
+  const { menu } = props
   return (
     <HeaderWrapper>
       <div className="content">
         <h1 className="logo">CODERZZX</h1>
-        <div className="menu">
-          <Menu menuList={menulist} />
-        </div>
+        <div className="menu">{menu}</div>
       </div>
     </HeaderWrapper>
   )

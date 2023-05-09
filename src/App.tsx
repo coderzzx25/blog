@@ -3,6 +3,7 @@ import type { FC, ReactNode } from 'react'
 import AppWrapper from './style'
 
 import Header from '@/components/Header/Header'
+import Menu from '@/components/Menu/Menu'
 import Home from './views/Home/Home'
 
 interface IProps {
@@ -10,9 +11,21 @@ interface IProps {
 }
 
 const App: FC<IProps> = () => {
+  const menulist = [
+    {
+      id: 1,
+      name: 'Home',
+      url: '/'
+    },
+    {
+      id: 2,
+      name: 'About Me',
+      url: '/aboutme'
+    }
+  ]
   return (
     <AppWrapper>
-      <Header />
+      <Header menu={<Menu menuList={menulist} />} />
       <Home />
     </AppWrapper>
   )
