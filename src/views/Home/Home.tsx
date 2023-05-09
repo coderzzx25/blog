@@ -12,7 +12,6 @@ const Home: FC<IProps> = () => {
   return (
     <HomeWrapper>
       <HomeBG />
-      test
     </HomeWrapper>
   )
 }
