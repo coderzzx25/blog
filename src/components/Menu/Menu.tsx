@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import MenuWrapper from './style'
 import classNames from 'classnames'
 
@@ -9,17 +10,19 @@ interface IProps {
 }
 
 const Menu: FC<IProps> = (props) => {
+  const { pathname } = useLocation()
   const { menuList } = props
   return (
     <MenuWrapper>
       {menuList?.map((item) => {
         return (
-          <div
-            className={classNames('item', { setitem: item.id === 1 ? 'setitem' : '' })}
+          <NavLink
+            className={classNames('item', { setitem: item.url === pathname ? 'setitem' : '' })}
+            to={item.url}
             key={item.id}
           >
             {item.name}
-          </div>
+          </NavLink>
         )
       })}
     </MenuWrapper>
