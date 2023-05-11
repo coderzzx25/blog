@@ -14,6 +14,7 @@ const Home: FC<IProps> = () => {
       <HomeBG />
       <span>coderzzx321</span>
       <div className="demo">demo</div>
+      <div className="test">test</div>
     </HomeWrapper>
   )
 }
