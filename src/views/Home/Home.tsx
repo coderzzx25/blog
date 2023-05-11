@@ -12,6 +12,7 @@ const Home: FC<IProps> = () => {
   return (
     <HomeWrapper>
       <HomeBG />
+      <div className="coder">coder</div>
     </HomeWrapper>
   )
 }
