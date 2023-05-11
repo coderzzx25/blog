@@ -12,7 +12,7 @@ const Home: FC<IProps> = () => {
   return (
     <HomeWrapper>
       <HomeBG />
-      coderzzx
+      coderzzx coderwhy
     </HomeWrapper>
   )
 }
