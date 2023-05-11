@@ -21,6 +21,7 @@ const App: FC<IProps> = () => {
     <AppWrapper>
       <Header menu={<Menu menuList={menulist} />} />
       {useRoutes(routes)}
+      coderwhy
     </AppWrapper>
   )
 }
