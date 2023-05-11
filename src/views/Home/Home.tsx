@@ -15,6 +15,7 @@ const Home: FC<IProps> = () => {
       <span>coderzzx321</span>
       <div className="demo">demo</div>
       <div className="test">test</div>
+      <div className="why">why</div>
     </HomeWrapper>
   )
 }
