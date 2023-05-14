@@ -6,7 +6,7 @@ interface IProps {
   children?: ReactNode
   name: string
   title?: string
-  list?: any[]
+  list: any[]
 }
 
 const BlogContent: FC<IProps> = (props) => {

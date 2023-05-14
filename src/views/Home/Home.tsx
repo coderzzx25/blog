@@ -15,17 +15,17 @@ const info = {
   list: [
     {
       id: 1,
-      img: 'https://img-blog.csdnimg.cn/20210401151759900.png',
+      img: 'https://static-cse.canva.cn/blob/239388/e1604019539295.jpg',
       title: 'blog1'
     },
     {
       id: 2,
-      img: 'https://img-blog.csdnimg.cn/20210401151759900.png',
+      img: 'https://static-cse.canva.cn/blob/239388/e1604019539295.jpg',
       title: 'blog2'
     },
     {
       id: 3,
-      img: 'https://img-blog.csdnimg.cn/20210401151759900.png',
+      img: 'https://static-cse.canva.cn/blob/239388/e1604019539295.jpg',
       title: 'blog3'
     }
   ]

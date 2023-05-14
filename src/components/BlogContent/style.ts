@@ -30,6 +30,8 @@ const BlogContentWrapper = styled.div`
       background: #ffffff;
       box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.05);
       border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
       &:hover {
         box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.1);
       }
