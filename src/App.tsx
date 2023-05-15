@@ -6,11 +6,8 @@ import { useRoutes } from 'react-router-dom'
 import routes from './router'
 // 样式
 import AppWrapper from './style'
-// 菜单配置
-import menulist from '@/config/menu.config'
 // 组件
-import Header from '@/components/Header/Header'
-import Menu from '@/components/Menu/Menu'
+import NavBar from '@/components/NabBar/NavBar'
 
 interface IProps {
   children?: ReactNode
@@ -19,7 +16,7 @@ interface IProps {
 const App: FC<IProps> = () => {
   return (
     <AppWrapper>
-      <Header menu={<Menu menuList={menulist} />} />
+      <NavBar />
       {useRoutes(routes)}
     </AppWrapper>
   )
