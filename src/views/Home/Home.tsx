@@ -1,8 +1,6 @@
 import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
-import HomeWrapper from './style'
-
-import HomeBG from './c-cpn/HomeBG/HomeBG'
+import NavBg from '@/components/NavBg/NavBg'
 
 interface IProps {
   children?: ReactNode
@@ -10,9 +8,9 @@ interface IProps {
 
 const Home: FC<IProps> = () => {
   return (
-    <HomeWrapper>
-      <HomeBG />
-    </HomeWrapper>
+    <div>
+      <NavBg />
+    </div>
   )
 }
 
