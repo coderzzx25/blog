@@ -12,8 +12,6 @@ import 'reset.less'
 import '@/assets/css/index.less'
 // 主题
 import theme from './assets/theme'
-// 动画库
-import 'animate.css'
 // 路由切换白屏动画
 import { CircularProgress } from '@mui/material'
 
