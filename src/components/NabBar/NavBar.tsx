@@ -1,7 +1,8 @@
 import React, { memo, useState } from 'react'
 import type { FC, ReactNode } from 'react'
 import NavBarWrapper from './style'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import classnames from 'classnames'
 
 import menulist from '@/config/menu.config'
 import { Close, Menu } from '@mui/icons-material'
@@ -12,6 +13,7 @@ interface IProps {
 
 const NavBar: FC<IProps> = () => {
   const [clicked, setClicked] = useState(false)
+  const { pathname } = useLocation()
   return (
     <NavBarWrapper>
       <nav className="NavBarItem">
@@ -19,11 +21,16 @@ const NavBar: FC<IProps> = () => {
         <div className="MenuIcon" onClick={() => setClicked(!clicked)}>
           {clicked ? <Close /> : <Menu />}
         </div>
-        <ul className="NavMenu">
+        <ul className={clicked ? 'NavMenu active' : 'NavMenu'}>
           {menulist.map((item) => {
             return (
               <li key={item.id}>
-                <Link className="NavLinks" to={item.url}>
+                <Link
+                  to={item.url}
+                  className={classnames('links', {
+                    setLinks: pathname === item.url ? true : false
+                  })}
+                >
                   {item.icon}
                   {item.name}
                 </Link>
