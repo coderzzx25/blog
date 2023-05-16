@@ -4,6 +4,7 @@ import HomeWrapper from './style'
 
 import NavBg from '@/components/NavBg/NavBg'
 import BlogNew from '@/components/BlogNew/BlogNew'
+import BlogContent from '@/components/BlogContent/BlogContent'
 
 interface IProps {
   children?: ReactNode
@@ -14,6 +15,7 @@ const Home: FC<IProps> = () => {
     <HomeWrapper>
       <NavBg />
       <BlogNew />
+      <BlogContent />
     </HomeWrapper>
   )
 }
